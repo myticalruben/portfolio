@@ -1,0 +1,3 @@
+[build]
+    publish = "dist/porfolio-cv"
+    command = "ng build --prod"
