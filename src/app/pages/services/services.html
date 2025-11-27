@@ -1,0 +1,19 @@
+<div class="wrapper">
+    <div class="services-content">
+        <div class="services-text">
+            <p id="section-services" class="small-paragraph">What I Offer</p>
+            <h1 class="section-title">Services</h1>
+        </div>
+        <div class="services-grid">
+            @for (s of services; track $index) {
+                <div class="services-item">
+                    <h2 class="services-title">{{s.title}}</h2>
+                    <div class="services-description">{{s.description}}</div>
+                </div>
+            }
+        </div>
+        <app-button
+            [buttonText]="'Contact Me'"
+            [buttonAction]="navigate"/>
+    </div>
+</div>
